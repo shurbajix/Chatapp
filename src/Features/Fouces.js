@@ -1,14 +1,15 @@
 import React from 'react';
-import {View,Text,StyleSheet} from 'react-native';
+import {View, Text ,StyleSheet} from 'react-native';
 import { colors } from '../utils/colors';
+import { TextInput } from 'react-native-paper';
 export const Focus = () => (
-<View style={StyleSheet.container}>
-    <Text style = {style.text}>Fouce Time</Text>
-
+<View style={styles.container}>
+    
+    <TextInput label="Fouce Item" />
 </View>
 )
 
-const style= StyleSheet.create({
+const styles= StyleSheet.create({
     container:{ 
         flex: 1,
     },
